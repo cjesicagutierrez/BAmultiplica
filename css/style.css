@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* Body */
+
+
+body {
+    background-color: #efc1dd;
+}
+
+section article {
+    background-color: rgb(223, 235, 249);
+}
+
+h1 {
+    font-family: 'Young Serif', serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+    list-style: inside;
+    font-size: 100px;
+    font-family: 'Young Serif', serif;
+}
+
+
+
+.subtitulo {
+    text-align: center;
+    list-style: lower-alpha;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subtituloUno {
+    text-align: center;
+    list-style: georgian;
+    padding: 10px;
+    border: 15px double rgb(162, 126, 215);
+    margin: 10px;
+}
+
+.historia {
+    text-align: center;
+    line-height: 1.5;
+    font-size: large;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+    padding: 25px;
+}
+
+.imagen {
+    -webkit-box-shadow: 24px -13px 30px -5px rgba(185, 111, 235, 0.67);
+    -moz-box-shadow: 24px -13px 30px -5px rgba(185, 111, 235, 0.67);
+    box-shadow: 24px -13px 30px -5px rgba(185, 111, 235, 0.67);
+    width: 350px;
+    margin: 0 10px;
+}
+
+
+/* Nosotros */
+
+.parrafoNosotros {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
