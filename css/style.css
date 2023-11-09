@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -11,7 +9,7 @@ header {
     min-height: 70px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
 }
 
 .logo {
@@ -54,6 +52,10 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0 4rem;
+    }
+
     header {
         flex-direction: column;
     }
@@ -63,11 +65,13 @@ nav ul li a:hover {
         color: #fd98fd;
     }
 }
- 
+
 
 body {
     background-color: #faf0f9;
     font-family: sans-serif;
+    line-height: 1.6;
+    padding: 0 1.5em;
 }
 
 section article {
@@ -86,7 +90,7 @@ h1 {
     font-size: 80px;
     font-family: 'Young Serif', serif;
     color: #fd98fd;
-    
+
 }
 
 
@@ -97,7 +101,7 @@ h1 {
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 15px;
-    
+
 }
 
 .subtituloUno {
@@ -135,19 +139,74 @@ h1 {
 }
 
 .descripcionFotos {
-text-align: center;
-color: black;
-font-weight: bold;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.contenedor {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+
+.info-home {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    height: auto;
+    background: #fd98fd;
+    width: 33.3%;
+    padding: 10px;
+}
+
+.info-home ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    list-style: none;
+    padding: 0
+}
+
+.info-home ul li {
+    padding: .3em
+}
+
+.info-p {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    height: auto;
+    background: #fd98fd;
+    width: 33.3%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.mapa {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    height: auto;
+    width: 33.3%;
+    background-color: #f5d0f5;
+    padding: 10px;
+}
 
 
 /* footer */
 
 footer {
     text-align: center;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 80px;
     margin: 80px;
@@ -155,7 +214,7 @@ footer {
 
 
 
-/* Nosotros */
+/*          Nosotros              */
 
 .parrafoNosotros {
     margin: 10px;
@@ -163,10 +222,100 @@ footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/*           productos            */
+/*           Productos            */
 
-.class{
+.productos {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: 20px;
+    padding: 50px;
+}
+
+.productos1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.20);
+}
+
+.card {
+    transition: all 0.3s;
+}
+
+/*         Contacto            */
+.formulario {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgb(172, 169, 173)
+}
+
+.contact-wrapper>* {
+    padding: 0.5em;
+}
+
+.contact-form {
+    background-color: #f5d0f5;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #b33737;
+    border-bottom: 2px solid #0c0c0c;
+}
+
+.contact-form form button {
+    background: #bfbdbe;
+    color: rgb(8, 8, 8);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d71a92;
+    transition: background-color 2s ease-out;
+    outline: 0;
+}
+
+/*            pantallas grandes          */
+@media (max-width:768px) {
+    .contact-wrapper>* {
+        padding: 2em;
+    }
+
+    .contenedor{
+        display: block;
+    }
+    .info-home, .info-p, .mapa{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+
 }
