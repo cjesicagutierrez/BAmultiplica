@@ -1,15 +1,32 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* Header */
+/*    ESTILOS INDEX   */
+
+body {
+    background-color: #faf0f9;
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 0 1.5em;
+}
 
 header {
     display: flex;
-    min-height: 70px;
+    min-height: 30vh;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+}
+
+.titulo {
+    text-align: center;
+    list-style: inside;
+    font-size: 4em;
+    font-family: 'Young Serif', serif;
+    color: #fd98fd;
 }
 
 .logo {
@@ -20,28 +37,28 @@ header {
 }
 
 .logo img {
-    height: 75px;
-    margin-right: 10px;
+    height: 18vh;
+    margin-right: ;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
 
-nav ul li {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+header nav ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-nav ul a {
+nav ul li a {
     text-decoration: none;
     font-size: 25px;
     color: #fd98fd;
@@ -51,110 +68,84 @@ nav ul li a:hover {
     color: rgb(239, 115, 186);
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 0 4rem;
-    }
-
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        padding: 10px 0px;
-        color: #fd98fd;
-    }
-}
-
-
-body {
-    background-color: #faf0f9;
-    font-family: sans-serif;
-    line-height: 1.6;
-    padding: 0 1.5em;
-}
-
-section article {
-    background-color: white;
-}
-
 h1 {
     font-family: 'Young Serif', serif;
-    font-size: 50px;
     text-align: center;
 }
-
-.titulo {
-    text-align: center;
-    list-style: inside;
-    font-size: 80px;
-    font-family: 'Young Serif', serif;
-    color: #fd98fd;
-
-}
-
-
 
 .subtitulo {
     text-align: center;
     list-style: lower-alpha;
-    font-size: large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 15px;
-
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    margin: 15px 30px 40px;
+    padding: 10px;
 }
 
 .subtituloUno {
     text-align: center;
     list-style: georgian;
-    padding: 10px;
+    padding: 20px;
     border: 15px double rgb(252, 119, 232);
-    margin: 10px;
+    margin: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
 }
 
 .historia {
-    text-align: center;
+    text-align: justify;
     line-height: 1.5;
-    font-size: large;
+    font-size: 1.3em;
     font-family: 'Cormorant Garamond', serif;
+    margin: 15px;
+    padding: 5px;
 }
 
 .fotos {
-    display: flex;
-    justify-content: space-around;
-    margin: 55px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     padding: 25px;
-    border: 25px;
+}
+
+.div-foto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
 }
 
 .imagen {
+
     -webkit-box-shadow: 24px -13px 30px -5px rgba(185, 111, 235, 0.67);
     -moz-box-shadow: 24px -13px 30px -5px rgba(185, 111, 235, 0.67);
     box-shadow: 24px -13px 30px -5px rgba(185, 111, 235, 0.67);
-    width: 400px;
-    height: 350px;
-    margin: 15px;
+    width: 330px;
+    height: 330px;
+    margin: ;
     border: 10px;
-    padding: 15px;
 }
 
 .descripcionFotos {
     text-align: center;
+    justify-content: center;
     color: black;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
 }
 
 .contenedor {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    align-content: center;
     width: 100%;
+    height: 50vh;
     font-family: 'Quicksand', sans-serif;
     overflow: hidden;
+    background: #fd98fd;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -163,9 +154,9 @@ h1 {
     flex: 0 1 auto;
     align-self: auto;
     height: auto;
-    background: #fd98fd;
     width: 33.3%;
     padding: 10px;
+
 }
 
 .info-home ul {
@@ -175,87 +166,52 @@ h1 {
     padding: 0
 }
 
+.info-home p {
+    text-align: center;
+}
+
 .info-home ul li {
     padding: .3em
 }
 
-.info-p {
-    order: 0;
-    flex: 0 1 auto;
-    align-self: auto;
-    height: auto;
-    background: #fd98fd;
-    width: 33.3%;
-    padding: 10px;
-    text-align: center;
-}
-
-
 .mapa {
+    display: flex;
+    justify-content: center;
     order: 0;
     flex: 0 1 auto;
-    align-self: center;
-    height: auto;
+    height: 300px;
     width: 33.3%;
-    background-color: #f5d0f5;
     padding: 10px;
 }
 
 
-/* footer */
+/*    FOOTER     */
 
 footer {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 80px;
+    padding: 20px;
     margin: 80px;
 }
-
-
-
-/*          Nosotros              */
-
-.parrafoNosotros {
-    margin: 10px;
-    padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+.footer img{
+    margin-bottom: 15px;
 }
 
-/*           Productos            */
-
-.productos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    padding: 50px;
+footer p {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    font-size: 15px;
 }
 
-.productos1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
-}
+/*         ESTILOS CONTACTO            */
 
-.card:hover {
-    transform: scale(1.20);
-}
-
-.card {
-    transition: all 0.3s;
-}
-
-/*         Contacto            */
 .formulario {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
     font-family: 'Quicksand', sans-serif;
-
 }
 
 .contact-wrapper {
@@ -302,20 +258,180 @@ footer {
     outline: 0;
 }
 
-/*            pantallas grandes          */
+/*    ESTILOS NOSOTROS              */
+
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 200px;
+}
+
+.icono-reloj {
+    margin: 50px 10px 25px 80px;
+    padding: 10px 5px 10px 15px;
+
+}
+
+.parrafoNosotros {
+    margin: 30px;
+    padding: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*           ESTILOS PRODUCTOS         */
+.adivinanza{
+text-align: center;
+}
+
+.adivinanza button{
+    background-color: #fd98fd;
+}
+
+
+.contenedor-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.card:hover {
+    transform: scale(1.20);
+}
+
+.card {
+    transition: all 0.3s;
+    margin: 10px;
+    padding: 2px;
+}
+
+
+
+
+/*            pantallas menores a 768px          */
+
 @media (max-width:768px) {
+
+    /*estilo index*/
+
+    header {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    nav {
+        color: #fd98fd;
+        margin: 20px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding-bottom: 3px;
+    }
+
+    .titulo {
+        font-size: 35px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+        margin: 0px 5px 15px 5px;
+        padding: 10px;
+    }
+
+
+    .subtituloUno {
+        font-size: 30px;
+    }
+    .historia{
+        font-size: 18px;
+    }
+
+    .div-foto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px;
+        padding: 5px;
+    }
+    .foto-img{
+        margin: 20px;
+    }
+
+    .contenedor {
+        display: block;
+        width: 100%;
+        height: 90vh;
+        margin-top: 50px;
+    }
+
+    .info-home,
+    .info-p,
+    .mapa {
+        width: 100%;
+    }
+
+    .footer {
+        margin: 45px;
+        padding: 10px;
+    }
+    .footer a img{
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    /*estilo contacto*/
+
     .contact-wrapper>* {
         padding: 2em;
     }
 
-    .contenedor{
-        display: block;
-    }
-    .info-home, .info-p, .mapa{
-        width: 100%;
-    }
-    .footer{
-        width: 100%;
+    .formulario-titulo {
+        text-align: center;
     }
 
+    /* estilo nosotros*/
+
+    .contenedor-nosotros {
+        display: block;
+    }
+
+    .icono-reloj {
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+        padding: 5px;
+    }
+
+    .parrafoNosotros {
+        margin-top: 5px;
+        padding-top: 5px;
+        text-align: justify;
+    }
+
+    /* estilo productos*/
+
+    .contenedor-productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }
 }

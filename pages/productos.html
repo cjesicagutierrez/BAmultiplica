@@ -7,7 +7,7 @@
   <title>Productos</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="shortcut icon" href="../assets/logo ceramica.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="../css/style.css">
+  
   <!--letra de google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,14 +32,26 @@
       </nav>
   </header>
 
-  <div class="productos">
+<div class="adivinanza">
+  <h1>Juego de Adivinanza</h1>
+  <p id="resultado"></p>
+  <form>
+      <label>Escribí un número entre 1 y 100:</label>
+      <input type="number" id="respuesta">
+      <button onclick="adivinar()">Adivinar</button>
+  </form>
+</div>
+
+  
+
+  <div class="contenedor-productos">
     <div class="card" style="width: 18rem;">
       <img src="../assets/foto plato.jpg" class="card-img-top" alt="foto plato">
       <div class="card-body">
         <h5 class="card-title">Plato</h5>
         <p class="card-text">Nuestras Piezas son únicas, ya que están
           realizadas a mano una por una de manera consiente y desde el amor.</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
       </div>
     </div>
 
@@ -48,7 +60,7 @@
       <div class="card-body">
         <h5 class="card-title">Maceta</h5>
         <p class="card-text">Pieza modelada a mano y en distintos tamaños</p>
-        <a href="#" class="btn btn-primary">Comprar</a>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
       </div>
     </div>
 
@@ -57,41 +69,37 @@
       <div class="card-body">
         <h5 class="card-title">Mate</h5>
         <p class="card-text">Mate sin asa, se puede encargar en distintos colores</p>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="../assets/azucarera.jpg" class="card-img-top" alt="foto azucarera">
+      <div class="card-body">
+        <h5 class="card-title">Azucarera</h5>
+        <p class="card-text">Azucarera con tapa y detalles pintados a mano</p>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="../assets/portasahumerio1.jpg" class="card-img-top" alt="foto portasahumerios">
+      <div class="card-body">
+        <h5 class="card-title">Portasahumerios</h5>
+        <p class="card-text">Son chicos, ideales para decorar cualquier rincon del tu hogar</p>
         <a href="#" class="btn btn-primary">Comprar</a>
       </div>
     </div>
-  </div>
 
-  <div class="productos1">
-
-  <div class="card" style="width: 18rem;">
-    <img src="../assets/azucarera.jpg" class="card-img-top" alt="foto azucarera">
-    <div class="card-body">
-      <h5 class="card-title">Azucarera</h5>
-      <p class="card-text">Azucarera con tapa y detalles pintados a mano</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
+    <div class="card" style="width: 18rem;">
+      <img src="../assets/vaso.jpg" class="card-img-top" alt="foto vaso">
+      <div class="card-body">
+        <h5 class="card-title">Vaso</h5>
+        <p class="card-text">Vaso pintado a mano con detalles de flores de lavanda.</p>
+        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+      </div>
     </div>
   </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="../assets/portasahumerio1.jpg" class="card-img-top" alt="foto portasahumerios">
-    <div class="card-body">
-      <h5 class="card-title">Portasahumerios</h5>
-      <p class="card-text">Son chicos, ideales para decorar cualquier rincon del tu hogar</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 18rem;">
-    <img src="../assets/vaso.jpg" class="card-img-top" alt="foto vaso">
-    <div class="card-body">
-      <h5 class="card-title">Vaso</h5>
-      <p class="card-text">Vaso pintado a mano con detalles de flores de lavanda.</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
-    </div>
-  </div>
-
-</div>
 
   <footer class="footer">
     <a href="https://www.instagram.com/" target="_blank"><img src="../assets/logo instagram.png" alt="Logo instagran"
@@ -100,14 +108,26 @@
         width="40px"></a>
     <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/logo whatsapp.png" alt="Logo whatsapp"
         width="40px"></a>
-    <p>© Ceramica Rose 2004. Quedan reservados todos los derechos de autor.</p>
+    <p>© Ceramica Rose 2004. </p>
+    <p>Quedan reservados todos los derechos de autor.</p>
   </footer>
+
+  
+
 
   <!--- enlace con bootstrap, pegar antes del cierre de etiqueta body--->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+
+  <!--enlace con sweet alert-->
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!--    conectamos JC con html     -->
+
+  <script src="../js/main.js"></script>
 
 </body>
 
