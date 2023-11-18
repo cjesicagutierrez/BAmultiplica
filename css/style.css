@@ -283,8 +283,11 @@ footer p {
 /*           ESTILOS PRODUCTOS         */
 .adivinanza{
 text-align: center;
+margin: 1.5rem;
 }
-
+.adivinanza p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .adivinanza button{
     background-color: #fd98fd;
 }
@@ -297,7 +300,7 @@ text-align: center;
     gap: 30px;
     justify-content: center;
     align-items: center;
-    margin: 1.5rem;
+    margin: 3rem;
 }
 
 .card:hover {
